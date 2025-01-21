@@ -1,8 +1,9 @@
 {
 	"name": "gitcalc",
 	"private": false,
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"type": "module",
+	"homepage": "https://sudo-arash.github.io/GitCalc",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
