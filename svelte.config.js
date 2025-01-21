@@ -9,7 +9,7 @@ const config = {
 
 	kit: {
 		paths: {
-			base: '/GitCalc/'
+			base: '/GitCalc'
 		},
 		adapter: adapter({
 			fallback: 'index.html'
