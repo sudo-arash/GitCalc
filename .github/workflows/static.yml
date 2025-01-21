@@ -16,16 +16,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
+    - name: Set up Bun
+      uses: oven-sh/bun-actions/setup@v1
       with:
-        node-version: '14'  # Use your preferred Node.js version
+        bun-version: '1.1.29'  # Use the version of Bun you want
 
     - name: Install dependencies
-      run: npm install  # Use yarn or another package manager if needed
+      run: bun install  # Use bun to install dependencies
 
     - name: Build the project
-      run: npm run build  # Run your build command (vite build or other)
+      run: bun run build  # Run your build command using Bun
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
