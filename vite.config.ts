@@ -3,5 +3,5 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit()],
-	base: 'https://sudo-arash.github.io/GitCalc/' // comment this to run in local
+	base: 'https://sudo-arash.github.io/GitCalc/'
 });
