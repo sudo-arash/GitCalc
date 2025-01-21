@@ -19,16 +19,16 @@ jobs:
     - name: Set up Bun
       uses: oven-sh/setup-bun@v2
       with:
-        bun-version: '1.1.29'  # Use the version of Bun you want
+        bun-version: '1.1.29'
 
     - name: Install dependencies
-      run: bun install  # Use bun to install dependencies
+      run: bun install 
 
     - name: Build the project
-      run: bun run build  # Run your build command using Bun
+      run: bun run build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        folder: build  # The build folder generated after the build process
+        github_token: ${{ secrets.github_token }}
+        folder: build
