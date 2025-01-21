@@ -1,38 +1,78 @@
-# sv
+# GitCalc
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+GitCalc is a simple web application that fetches GitHub repository information through the Github's API. This project allows you to search for repositories on GitHub by specifying the owner and the repository name.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Fetch GitHub repository details including:
+  - Repository owner
+  - Repository name
+  - Default branch
+  - Fork status
+  - Watchers count
+  - Stars count
+  - Size (in KB)
+  - Creation and update date
+  - Repository description
+- Simple interface
+- Loading spinner during data fetch
+- Modal to display detailed repository information
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Prerequisites
 
-# create a new project in my-app
-npx sv create my-app
-```
+Before running this project, make sure you have the following installed:
 
-## Developing
+- Node.js (with **bun**)
+- TypeScript
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Installation
 
-```bash
-npm run dev
+1. Clone this repository to your local machine:
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+   ```bash
+   git clone https://github.com/sudo-arash/GitCalc.git
+   ```
 
-## Building
+2. Navigate to the project directory:
 
-To create a production version of your app:
+   ```bash
+   cd GitCalc
+   ```
 
-```bash
-npm run build
-```
+3. Install the dependencies:
 
-You can preview the production build with `npm run preview`.
+   ```bash
+   bun install
+   ```
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Usage
+
+1. Run the development server:
+
+   ```bash
+   bun dev
+   ```
+
+2. Open your browser and navigate to [http://localhost:5173](http://localhost:5173) to use the GitCalc app.
+
+3. Enter the repository owner and name in the provided form and click on **Fetch Info** to retrieve the repository details.
+
+4. The repository information will be displayed in a modal upon successful fetch.
+
+## Technologies Used
+
+- **Svelte**: For building the user interface.
+- **Tailwind CSS**: For styling the app with utility-first classes.
+- **Axios**: For making HTTP requests to the GitHub API.
+- **Font Awesome**: For icons used throughout the app.
+- and the lovely **Bun**.
+
+
+## The reason behind this project
+
+If you have already guessed by the name, this project was meant to calculate the size of a GitHub REPO. Because I used Github's API all the time to get the size of repos where I had planned to clone, so I decided
+to make something like this. This project helps me and probably you.
+
+I hope you like it. If you do, please star and fork the repo to help me out with it.
+
+Cheers everybody!
