@@ -3,6 +3,10 @@
 	let { children } = $props();
 </script>
 
+<svelte:head>
+    <title>Fetch GitHub Repository Information for free - GitCalc</title> 
+</svelte:head>
+
 <div class="relative flex min-h-screen items-center justify-center bg-gray-100 p-4">
 	{@render children()}
 </div>
